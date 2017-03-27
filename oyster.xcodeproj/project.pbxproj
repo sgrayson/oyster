@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		93660B421E895A8500F4342B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93660B411E895A8500F4342B /* AppDelegate.swift */; };
+		93660B441E895A8500F4342B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93660B431E895A8500F4342B /* ViewController.swift */; };
+		93660B471E895A8500F4342B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93660B451E895A8500F4342B /* Main.storyboard */; };
+		93660B491E895A8500F4342B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93660B481E895A8500F4342B /* Assets.xcassets */; };
+		93660B4C1E895A8500F4342B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93660B4A1E895A8500F4342B /* LaunchScreen.storyboard */; };
+		93660B511E895A8500F4342B /* oyster WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 93660B501E895A8500F4342B /* oyster WatchKit App.app */; };
+		93660B571E895A8500F4342B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93660B551E895A8500F4342B /* Interface.storyboard */; };
+		93660B591E895A8500F4342B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93660B581E895A8500F4342B /* Assets.xcassets */; };
+		93660B601E895A8500F4342B /* oyster WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 93660B5F1E895A8500F4342B /* oyster WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		93660B671E895A8500F4342B /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93660B661E895A8500F4342B /* InterfaceController.swift */; };
+		93660B691E895A8500F4342B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93660B681E895A8500F4342B /* ExtensionDelegate.swift */; };
+		93660B6B1E895A8500F4342B /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93660B6A1E895A8500F4342B /* NotificationController.swift */; };
+		93660B6D1E895A8500F4342B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93660B6C1E895A8500F4342B /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		93660B521E895A8500F4342B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93660B361E895A8500F4342B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93660B4F1E895A8500F4342B;
+			remoteInfo = "oyster WatchKit App";
+		};
+		93660B611E895A8500F4342B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93660B361E895A8500F4342B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93660B5E1E895A8500F4342B;
+			remoteInfo = "oyster WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		93660B741E895A8600F4342B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				93660B601E895A8500F4342B /* oyster WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93660B781E895A8600F4342B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				93660B511E895A8500F4342B /* oyster WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		93660B3E1E895A8500F4342B /* oyster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oyster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93660B411E895A8500F4342B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		93660B431E895A8500F4342B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		93660B461E895A8500F4342B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		93660B481E895A8500F4342B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93660B4B1E895A8500F4342B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		93660B4D1E895A8500F4342B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93660B501E895A8500F4342B /* oyster WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "oyster WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93660B561E895A8500F4342B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		93660B581E895A8500F4342B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93660B5A1E895A8500F4342B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93660B5F1E895A8500F4342B /* oyster WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "oyster WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93660B651E895A8500F4342B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		93660B661E895A8500F4342B /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		93660B681E895A8500F4342B /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		93660B6A1E895A8500F4342B /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		93660B6C1E895A8500F4342B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93660B6E1E895A8500F4342B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93660B3B1E895A8500F4342B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93660B5C1E895A8500F4342B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		93660B351E895A8500F4342B = {
+			isa = PBXGroup;
+			children = (
+				93660B401E895A8500F4342B /* oyster */,
+				93660B541E895A8500F4342B /* oyster WatchKit App */,
+				93660B631E895A8500F4342B /* oyster WatchKit Extension */,
+				93660B3F1E895A8500F4342B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		93660B3F1E895A8500F4342B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93660B3E1E895A8500F4342B /* oyster.app */,
+				93660B501E895A8500F4342B /* oyster WatchKit App.app */,
+				93660B5F1E895A8500F4342B /* oyster WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93660B401E895A8500F4342B /* oyster */ = {
+			isa = PBXGroup;
+			children = (
+				93660B411E895A8500F4342B /* AppDelegate.swift */,
+				93660B431E895A8500F4342B /* ViewController.swift */,
+				93660B451E895A8500F4342B /* Main.storyboard */,
+				93660B481E895A8500F4342B /* Assets.xcassets */,
+				93660B4A1E895A8500F4342B /* LaunchScreen.storyboard */,
+				93660B4D1E895A8500F4342B /* Info.plist */,
+			);
+			path = oyster;
+			sourceTree = "<group>";
+		};
+		93660B541E895A8500F4342B /* oyster WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				93660B551E895A8500F4342B /* Interface.storyboard */,
+				93660B581E895A8500F4342B /* Assets.xcassets */,
+				93660B5A1E895A8500F4342B /* Info.plist */,
+			);
+			path = "oyster WatchKit App";
+			sourceTree = "<group>";
+		};
+		93660B631E895A8500F4342B /* oyster WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				93660B661E895A8500F4342B /* InterfaceController.swift */,
+				93660B681E895A8500F4342B /* ExtensionDelegate.swift */,
+				93660B6A1E895A8500F4342B /* NotificationController.swift */,
+				93660B6C1E895A8500F4342B /* Assets.xcassets */,
+				93660B6E1E895A8500F4342B /* Info.plist */,
+				93660B641E895A8500F4342B /* Supporting Files */,
+			);
+			path = "oyster WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		93660B641E895A8500F4342B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93660B651E895A8500F4342B /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93660B3D1E895A8500F4342B /* oyster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93660B791E895A8600F4342B /* Build configuration list for PBXNativeTarget "oyster" */;
+			buildPhases = (
+				93660B3A1E895A8500F4342B /* Sources */,
+				93660B3B1E895A8500F4342B /* Frameworks */,
+				93660B3C1E895A8500F4342B /* Resources */,
+				93660B781E895A8600F4342B /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93660B531E895A8500F4342B /* PBXTargetDependency */,
+			);
+			name = oyster;
+			productName = oyster;
+			productReference = 93660B3E1E895A8500F4342B /* oyster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		93660B4F1E895A8500F4342B /* oyster WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93660B751E895A8600F4342B /* Build configuration list for PBXNativeTarget "oyster WatchKit App" */;
+			buildPhases = (
+				93660B4E1E895A8500F4342B /* Resources */,
+				93660B741E895A8600F4342B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93660B621E895A8500F4342B /* PBXTargetDependency */,
+			);
+			name = "oyster WatchKit App";
+			productName = "oyster WatchKit App";
+			productReference = 93660B501E895A8500F4342B /* oyster WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		93660B5E1E895A8500F4342B /* oyster WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93660B711E895A8600F4342B /* Build configuration list for PBXNativeTarget "oyster WatchKit Extension" */;
+			buildPhases = (
+				93660B5B1E895A8500F4342B /* Sources */,
+				93660B5C1E895A8500F4342B /* Frameworks */,
+				93660B5D1E895A8500F4342B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "oyster WatchKit Extension";
+			productName = "oyster WatchKit Extension";
+			productReference = 93660B5F1E895A8500F4342B /* oyster WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93660B361E895A8500F4342B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Otter;
+				TargetAttributes = {
+					93660B3D1E895A8500F4342B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 57H4KPM6R2;
+						ProvisioningStyle = Automatic;
+					};
+					93660B4F1E895A8500F4342B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 57H4KPM6R2;
+						ProvisioningStyle = Automatic;
+					};
+					93660B5E1E895A8500F4342B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 57H4KPM6R2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 93660B391E895A8500F4342B /* Build configuration list for PBXProject "oyster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93660B351E895A8500F4342B;
+			productRefGroup = 93660B3F1E895A8500F4342B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93660B3D1E895A8500F4342B /* oyster */,
+				93660B4F1E895A8500F4342B /* oyster WatchKit App */,
+				93660B5E1E895A8500F4342B /* oyster WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93660B3C1E895A8500F4342B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93660B4C1E895A8500F4342B /* LaunchScreen.storyboard in Resources */,
+				93660B491E895A8500F4342B /* Assets.xcassets in Resources */,
+				93660B471E895A8500F4342B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93660B4E1E895A8500F4342B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93660B591E895A8500F4342B /* Assets.xcassets in Resources */,
+				93660B571E895A8500F4342B /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93660B5D1E895A8500F4342B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93660B6D1E895A8500F4342B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93660B3A1E895A8500F4342B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93660B441E895A8500F4342B /* ViewController.swift in Sources */,
+				93660B421E895A8500F4342B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93660B5B1E895A8500F4342B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93660B6B1E895A8500F4342B /* NotificationController.swift in Sources */,
+				93660B691E895A8500F4342B /* ExtensionDelegate.swift in Sources */,
+				93660B671E895A8500F4342B /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93660B531E895A8500F4342B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93660B4F1E895A8500F4342B /* oyster WatchKit App */;
+			targetProxy = 93660B521E895A8500F4342B /* PBXContainerItemProxy */;
+		};
+		93660B621E895A8500F4342B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93660B5E1E895A8500F4342B /* oyster WatchKit Extension */;
+			targetProxy = 93660B611E895A8500F4342B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		93660B451E895A8500F4342B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93660B461E895A8500F4342B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		93660B4A1E895A8500F4342B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93660B4B1E895A8500F4342B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		93660B551E895A8500F4342B /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93660B561E895A8500F4342B /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93660B6F1E895A8500F4342B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		93660B701E895A8500F4342B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93660B721E895A8600F4342B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 57H4KPM6R2;
+				INFOPLIST_FILE = "oyster WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Otter.oyster.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		93660B731E895A8600F4342B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 57H4KPM6R2;
+				INFOPLIST_FILE = "oyster WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Otter.oyster.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		93660B761E895A8600F4342B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 57H4KPM6R2;
+				IBSC_MODULE = oyster_WatchKit_Extension;
+				INFOPLIST_FILE = "oyster WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = Otter.oyster.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		93660B771E895A8600F4342B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 57H4KPM6R2;
+				IBSC_MODULE = oyster_WatchKit_Extension;
+				INFOPLIST_FILE = "oyster WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = Otter.oyster.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		93660B7A1E895A8600F4342B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 57H4KPM6R2;
+				INFOPLIST_FILE = oyster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Otter.oyster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		93660B7B1E895A8600F4342B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 57H4KPM6R2;
+				INFOPLIST_FILE = oyster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Otter.oyster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93660B391E895A8500F4342B /* Build configuration list for PBXProject "oyster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93660B6F1E895A8500F4342B /* Debug */,
+				93660B701E895A8500F4342B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93660B711E895A8600F4342B /* Build configuration list for PBXNativeTarget "oyster WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93660B721E895A8600F4342B /* Debug */,
+				93660B731E895A8600F4342B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		93660B751E895A8600F4342B /* Build configuration list for PBXNativeTarget "oyster WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93660B761E895A8600F4342B /* Debug */,
+				93660B771E895A8600F4342B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		93660B791E895A8600F4342B /* Build configuration list for PBXNativeTarget "oyster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93660B7A1E895A8600F4342B /* Debug */,
+				93660B7B1E895A8600F4342B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 93660B361E895A8500F4342B /* Project object */;
+}
