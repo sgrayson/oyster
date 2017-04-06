@@ -1,14 +1,206 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12113" systemVersion="16E154a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hYR-eT-9Ne">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12078"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="Mur-hi-1r7">
+            <objects>
+                <navigationController id="hYR-eT-9Ne" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mmt-sD-Cpd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="kmT-42-P7b" kind="relationship" relationship="rootViewController" id="cuW-Ie-fZY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pBR-8J-wI7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1782" y="132"/>
+        </scene>
+        <!--New Student-->
+        <scene sceneID="0yM-Fn-oVK">
+            <objects>
+                <viewController id="80s-hu-WS6" customClass="StudentViewController" customModule="oyster" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QbN-l7-z7S"/>
+                        <viewControllerLayoutGuide type="bottom" id="bOV-JZ-P7O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JP0-OO-2hv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="xZH-Hk-jWR">
+                                <rect key="frame" x="16" y="84" width="343" height="206"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Student Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CFv-EB-Ab8">
+                                        <rect key="frame" x="0.0" y="0.0" width="151.5" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Student Grade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nxV-r7-OYi">
+                                        <rect key="frame" x="0.0" y="44" width="153.5" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Student Target Behavior" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q8f-BQ-QVd">
+                                        <rect key="frame" x="0.0" y="88" width="215.5" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Student Replacemment Behavior" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xbv-So-r1l">
+                                        <rect key="frame" x="0.0" y="132" width="270.5" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruu-b5-nwq">
+                                        <rect key="frame" x="0.0" y="176" width="151" height="30"/>
+                                        <state key="normal" title="Set Default Label Text"/>
+                                        <connections>
+                                            <action selector="setDefaultTextLabelButton:" destination="80s-hu-WS6" eventType="touchUpInside" id="i7d-nq-lgK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="studentPic1" translatesAutoresizingMaskIntoConstraints="NO" id="JCe-B9-dkM">
+                                <rect key="frame" x="16" y="304" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.53725490200000003" green="0.78823529410000004" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Ogz-5Z-GYF" appends="YES" id="p58-Lu-Ts1"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xZH-Hk-jWR" firstAttribute="top" secondItem="QbN-l7-z7S" secondAttribute="bottom" constant="20" id="XHh-h8-a8E"/>
+                            <constraint firstItem="xZH-Hk-jWR" firstAttribute="leading" secondItem="JP0-OO-2hv" secondAttribute="leadingMargin" id="qsz-uD-Px7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xZH-Hk-jWR" secondAttribute="trailing" id="uwW-cD-Glj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="New Student" id="2HB-l7-uiC">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="b4G-Hm-5S1">
+                            <connections>
+                                <action selector="cancel:" destination="80s-hu-WS6" id="nku-mx-F2R"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="TEy-KM-aOS">
+                            <connections>
+                                <segue destination="Lp3-jO-ug2" kind="unwind" unwindAction="unwindToStudentListWithSender:" id="Q8Q-jm-V9T"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="pictureImageView" destination="JCe-B9-dkM" id="RIm-Ch-WDc"/>
+                        <outlet property="saveButton" destination="TEy-KM-aOS" id="m1A-5l-m8r"/>
+                        <outlet property="studentGradeTextFeild" destination="nxV-r7-OYi" id="wcA-uH-K4f"/>
+                        <outlet property="studentNameTextLabel" destination="CFv-EB-Ab8" id="quc-Fg-5xF"/>
+                        <outlet property="studentReplacementBehaviorTextFeild" destination="xbv-So-r1l" id="1HE-OO-bAY"/>
+                        <outlet property="studentTargetBehaviorTextFeild" destination="q8f-BQ-QVd" id="69y-MY-IJd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="meW-Dt-nXp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Lp3-jO-ug2" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="vHl-Yi-cqC"/>
+                <tapGestureRecognizer id="Ogz-5Z-GYF">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="80s-hu-WS6" id="eCv-Zk-jKx"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-135" y="959"/>
+        </scene>
+        <!--Dashboard-->
+        <scene sceneID="X7g-zz-WYi">
+            <objects>
+                <tableViewController id="kmT-42-P7b" customClass="StudentTableViewController" customModule="oyster" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="129" sectionHeaderHeight="28" sectionFooterHeight="28" id="BkL-8S-0QP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="StudentTableViewCell" rowHeight="129" id="Svm-k0-f1q" customClass="StudentTableViewCell" customModule="oyster" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="129"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Svm-k0-f1q" id="FD7-3R-2xR">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="128.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0V2-4W-xh6">
+                                            <rect key="frame" x="8" y="8" width="75" height="75"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJq-2K-lSA">
+                                            <rect key="frame" x="91" y="10" width="276" height="28"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.25487014650000001" green="0.25492024419999998" blue="0.25486692789999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3y-AK-1B5">
+                                            <rect key="frame" x="4" y="89" width="180" height="36"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.28898188470000002" green="0.8405494094" blue="0.56450182199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <state key="normal" title="Button">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="replacementButtonAction:" destination="kmT-42-P7b" eventType="touchUpInside" id="xL9-kd-VdO"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fpa-qI-BFx">
+                                            <rect key="frame" x="182" y="89" width="186" height="36"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="1" green="0.43137254899999999" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                            <state key="normal" title="Button">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="studentImageView" destination="0V2-4W-xh6" id="Klu-9G-Dbs"/>
+                                    <outlet property="studentNameLabel" destination="QJq-2K-lSA" id="1uH-3V-jwi"/>
+                                    <outlet property="studentReplacementBehaviorButton" destination="E3y-AK-1B5" id="fJP-Uy-6pg"/>
+                                    <outlet property="studentTargetBehaviorButton" destination="Fpa-qI-BFx" id="FoD-St-2uI"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDetail" id="aDT-vW-gfs"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="kmT-42-P7b" id="cr5-FH-R03"/>
+                            <outlet property="delegate" destination="kmT-42-P7b" id="AiX-Rt-evd"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Dashboard" id="GFI-44-gyk">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="yOs-jb-nbc">
+                            <connections>
+                                <segue destination="ret-VQ-igf" kind="presentation" identifier="AddItem" id="ryM-mv-44O"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oll-Az-GaG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-975.20000000000005" y="131.78410794602701"/>
+        </scene>
+        <!--Student Detail View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="StudentDetailViewController" customModule="oyster" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +208,74 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bt-wQ-7Gq">
+                                <rect key="frame" x="67" y="324" width="240" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.25487014650000001" green="0.25492024419999998" blue="0.25486692789999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y0Z-0F-gmo">
+                                <rect key="frame" x="16" y="509" width="138" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.28898188470000002" green="0.8405494094" blue="0.56450182199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="replacementCounterButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rUj-fp-oWh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abG-Uh-tSy">
+                                <rect key="frame" x="221" y="509" width="138" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.43137254899999999" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="targetCounterButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YWg-YN-a76"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jXg-aJ-6Qg">
+                                <rect key="frame" x="67" y="78" width="240" height="229"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="studentDetailImageView" destination="jXg-aJ-6Qg" id="n4j-Hn-jqY"/>
+                        <outlet property="studentDetailLabelView" destination="4bt-wQ-7Gq" id="rb6-jU-0lX"/>
+                        <outlet property="studentDetailReplacementBehaviorButton" destination="y0Z-0F-gmo" id="GAl-Yr-Anm"/>
+                        <outlet property="studentDetailTargetBehaviorButton" destination="abG-Uh-tSy" id="QP8-tK-gmf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-135" y="132"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oRs-sT-UQM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ret-VQ-igf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="E7k-KY-yLI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="80s-hu-WS6" kind="relationship" relationship="rootViewController" id="bXQ-Pv-Qqf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pos-Az-i9g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-975" y="960"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="studentPic1" width="400" height="225"/>
+    </resources>
 </document>
