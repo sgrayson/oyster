@@ -9,6 +9,8 @@
 import UIKit
 
 
+// this holds the connections to the objects and actions for the page that shows the students details 
+
 
 class StudentDetailViewController: UIViewController {
 

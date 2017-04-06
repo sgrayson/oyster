@@ -9,6 +9,9 @@
 import UIKit
 import os.log
 
+
+// this class defines the objects and actions of the table view as a whole 
+
 var students = [Student]()
 
 

@@ -8,6 +8,8 @@
 
 import UIKit
 
+// this is an attempt to create a class that defines the attributes of a replacement behavior 
+
 class replacementBehavior {
     
     var studentsNameBehaviorR : String

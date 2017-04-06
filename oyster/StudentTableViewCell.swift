@@ -8,6 +8,10 @@
 
 import UIKit
 
+
+// this class defines what objects and action are in each table view cell
+
+
 class StudentTableViewCell: UITableViewCell {
 
     

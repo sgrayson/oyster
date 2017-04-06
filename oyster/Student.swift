@@ -8,6 +8,8 @@
 
 import UIKit
 
+// this is a class to allow the creation and display of studnets information
+
 class Student {
     
     var studentName : String
