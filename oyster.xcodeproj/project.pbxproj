@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		931888111E9C7B1D00656099 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931888101E9C7B1D00656099 /* AuthenticationViewController.swift */; };
 		935139791E8AFA9D001FCEE5 /* StudentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935139781E8AFA9D001FCEE5 /* StudentDetailViewController.swift */; };
 		9351397B1E8BFCF8001FCEE5 /* TargetBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9351397A1E8BFCF8001FCEE5 /* TargetBehavior.swift */; };
 		9351397D1E8BFE3C001FCEE5 /* ReplacementBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9351397C1E8BFE3C001FCEE5 /* ReplacementBehavior.swift */; };
@@ -71,6 +72,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		931888101E9C7B1D00656099 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		935139781E8AFA9D001FCEE5 /* StudentDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudentDetailViewController.swift; path = ../StudentDetailViewController.swift; sourceTree = "<group>"; };
 		9351397A1E8BFCF8001FCEE5 /* TargetBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetBehavior.swift; sourceTree = "<group>"; };
 		9351397C1E8BFE3C001FCEE5 /* ReplacementBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplacementBehavior.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				93660B431E895A8500F4342B /* StudentViewController.swift */,
 				935139781E8AFA9D001FCEE5 /* StudentDetailViewController.swift */,
 				93660B451E895A8500F4342B /* Main.storyboard */,
+				931888101E9C7B1D00656099 /* AuthenticationViewController.swift */,
 				93660B831E895BF600F4342B /* Initial Table View */,
 				93660B481E895A8500F4342B /* Assets.xcassets */,
 				93660B4A1E895A8500F4342B /* LaunchScreen.storyboard */,
@@ -343,6 +346,7 @@
 				93660B821E895BCD00F4342B /* StudentTableViewCell.swift in Sources */,
 				93660B7D1E895B3600F4342B /* Student.swift in Sources */,
 				93660B801E895BA100F4342B /* StudentTableViewController.swift in Sources */,
+				931888111E9C7B1D00656099 /* AuthenticationViewController.swift in Sources */,
 				9351397D1E8BFE3C001FCEE5 /* ReplacementBehavior.swift in Sources */,
 				93660B421E895A8500F4342B /* AppDelegate.swift in Sources */,
 				935139791E8AFA9D001FCEE5 /* StudentDetailViewController.swift in Sources */,
