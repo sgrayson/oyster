@@ -14,6 +14,7 @@ import UIKit
 
 class StudentDetailViewController: UIViewController {
 
+  
     
     var targetCounter = 0
     var replacementCounter = 0

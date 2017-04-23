@@ -52,6 +52,21 @@ class StudentTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        /*
+ 
+ 
+ let cell = tableView.dequeueReusableCell(withIdentifier: "ButtonCell", for: indexPath) as! ButtonCell
+ 
+ 
+ cell.tapAction = { (cell) in
+ self.showAlertForRow(tableView.indexPath(for: cell)!.row)
+ }
+ 
+ return cell
+ }
+ */
+        
+ 
         let cellIdentifier = "StudentTableViewCell"
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? StudentTableViewCell  else {
@@ -59,6 +74,17 @@ class StudentTableViewController: UITableViewController {
         }
 
         let student = students[indexPath.row]
+        
+        cell.studentReplacementBehaviorButton.tag = indexPath.row
+        cell.studentTargetBehaviorButton.tag = indexPath.row
+        
+        
+        
+        
+        cell.replacementBehaviorButtonAction(cell.studentReplacementBehaviorButton)
+        
+        cell.targetBehaviorButtonAction(cell.studentTargetBehaviorButton)
+            
         
         cell.studentNameLabel.text = student.studentName
         cell.studentImageView.image = student.studentPhoto
@@ -77,6 +103,8 @@ class StudentTableViewController: UITableViewController {
     }
  
     
+        
+
     
     
     
@@ -179,10 +207,7 @@ class StudentTableViewController: UITableViewController {
         
     }
     
-    @IBAction func replacementButtonAction(_ sender: Any) {
-        replacementCount += 1
-        
-    }
+   
 
     
 }
