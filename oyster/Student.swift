@@ -14,7 +14,6 @@ class Student {
     
     var idOpt: Int?
     var studentName : String
-    //TODO(sgrayson): consider making this just Int?
     var studentGrade : String
     var studentPhoto : UIImage?
     var studentTargetBehavior : String
