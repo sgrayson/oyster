@@ -15,6 +15,7 @@ import os.log
 class StudentViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
     
     
+    
     var targetCount = 0
     var replacmentCount = 0
 
@@ -88,7 +89,7 @@ class StudentViewController: UIViewController, UITextFieldDelegate, UIImagePicke
     //MARK: UIImagePickerControllerDelegate
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-    dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
@@ -123,7 +124,7 @@ class StudentViewController: UIViewController, UITextFieldDelegate, UIImagePicke
         
         let studentName = studentNameTextLabel.text ?? ""
         let studentPhoto = pictureImageView.image
-        let studentGrade = Int(studentGradeTextFeild.text!)
+        let studentGrade = studentGradeTextFeild.text
         let studentTargetBehavior = studentTargetBehaviorTextFeild.text
         let studentReplacementBehavior = studentReplacementBehaviorTextFeild.text
         
@@ -131,7 +132,8 @@ class StudentViewController: UIViewController, UITextFieldDelegate, UIImagePicke
         
         
         // Set the meal to be passed to MealTableViewController after the unwind segue.
-        student = Student(studentName: studentName, studentGrade : studentGrade, studentPhoto : studentPhoto, studentTargetBehavior : "\(studentTargetBehavior!) : \(targetCount)", studentReplacementBehavior : "\(studentReplacementBehavior!) : \(replacmentCount)")
+        student = Student(studentName: studentName, studentGrade : studentGrade!, studentPhoto : studentPhoto, studentTargetBehavior : "\(studentTargetBehavior!) : \(targetCount)", studentReplacementBehavior : "\(studentReplacementBehavior!) : \(replacmentCount)")
+        
         
     }
     

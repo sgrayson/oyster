@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		718189A41EA96EF50098DE9C /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718189A31EA96EF50098DE9C /* ApiClient.swift */; };
 		931888111E9C7B1D00656099 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931888101E9C7B1D00656099 /* AuthenticationViewController.swift */; };
 		935139791E8AFA9D001FCEE5 /* StudentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935139781E8AFA9D001FCEE5 /* StudentDetailViewController.swift */; };
 		9351397B1E8BFCF8001FCEE5 /* TargetBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9351397A1E8BFCF8001FCEE5 /* TargetBehavior.swift */; };
@@ -73,6 +74,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		718189A31EA96EF50098DE9C /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		931888101E9C7B1D00656099 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		935139781E8AFA9D001FCEE5 /* StudentDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudentDetailViewController.swift; path = ../StudentDetailViewController.swift; sourceTree = "<group>"; };
 		9351397A1E8BFCF8001FCEE5 /* TargetBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetBehavior.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				93660B481E895A8500F4342B /* Assets.xcassets */,
 				93660B4A1E895A8500F4342B /* LaunchScreen.storyboard */,
 				93660B4D1E895A8500F4342B /* Info.plist */,
+				718189A31EA96EF50098DE9C /* ApiClient.swift */,
 			);
 			path = oyster;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				93AD9D451EA5C3360044A328 /* BehaviorButton.swift in Sources */,
 				935139791E8AFA9D001FCEE5 /* StudentDetailViewController.swift in Sources */,
 				9351397B1E8BFCF8001FCEE5 /* TargetBehavior.swift in Sources */,
+				718189A41EA96EF50098DE9C /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
