@@ -21,6 +21,11 @@ class StudentTableViewController: UITableViewController {
     
     var targetCount = 0
     var replacementCount = 0
+    
+    //CHANGE THIS TO 'true' to not read/write from database
+    var DEBUG = false
+    
+    var client = ApiClient()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -167,6 +172,10 @@ class StudentTableViewController: UITableViewController {
         if let sourceViewController = sender.source as? StudentViewController, let student = sourceViewController.student {
             let newIndexPath = IndexPath(row: students.count, section: 0)
             students.append(student)
+            if (!DEBUG) {
+                // write to database
+                client.setStudent(student)
+            }
             tableView.insertRows(at: [newIndexPath], with: .automatic)
         }
     }
@@ -177,21 +186,15 @@ class StudentTableViewController: UITableViewController {
     //MARK: Private Functions
     
     private func loadStudents() {
-        
-        let studentPic1 = UIImage(named: "studentPic1")
-
-        
-        
-        guard let student1 = Student(studentName: "Timmy", studentGrade : 6, studentPhoto : #imageLiteral(resourceName: "studentPic2"), studentTargetBehavior : "Blurting : \(targetCount)", studentReplacementBehavior : "Hand Raise : \(replacementCount)") else {
-            fatalError("Unable to instantiate student1")
+        if (DEBUG) {
+            guard let student = Student(studentName: "Timmy", studentGrade : "6", studentPhoto : #imageLiteral(resourceName: "studentPic2"), studentTargetBehavior : "Blurting : \(targetCount)", studentReplacementBehavior : "Hand Raise : \(replacementCount)") else {
+                fatalError("Unable to instantiate student1")
+            }
+            students.append(student)
+        } else {
+            let studentsForDevice = client.getStudents()
+            students.append(contentsOf: studentsForDevice)
         }
-        
-        
-        
-        
-        
-        
-        students += [student1]
     }
     
     
