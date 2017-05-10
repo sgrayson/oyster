@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		718189A41EA96EF50098DE9C /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718189A31EA96EF50098DE9C /* ApiClient.swift */; };
+		93013BAF1EC35FD10051B8D2 /* TargetBehaviorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93013BAE1EC35FD10051B8D2 /* TargetBehaviorsViewController.swift */; };
+		93013BB11EC3608B0051B8D2 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93013BB01EC3608B0051B8D2 /* MyCollectionViewCell.swift */; };
+		93013BB31EC3A30D0051B8D2 /* ReplacementBehaviorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93013BB21EC3A30D0051B8D2 /* ReplacementBehaviorViewController.swift */; };
 		931888111E9C7B1D00656099 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931888101E9C7B1D00656099 /* AuthenticationViewController.swift */; };
 		935139791E8AFA9D001FCEE5 /* StudentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935139781E8AFA9D001FCEE5 /* StudentDetailViewController.swift */; };
 		9351397B1E8BFCF8001FCEE5 /* TargetBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9351397A1E8BFCF8001FCEE5 /* TargetBehavior.swift */; };
@@ -75,6 +78,9 @@
 
 /* Begin PBXFileReference section */
 		718189A31EA96EF50098DE9C /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		93013BAE1EC35FD10051B8D2 /* TargetBehaviorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetBehaviorsViewController.swift; sourceTree = "<group>"; };
+		93013BB01EC3608B0051B8D2 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		93013BB21EC3A30D0051B8D2 /* ReplacementBehaviorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplacementBehaviorViewController.swift; sourceTree = "<group>"; };
 		931888101E9C7B1D00656099 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		935139781E8AFA9D001FCEE5 /* StudentDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudentDetailViewController.swift; path = ../StudentDetailViewController.swift; sourceTree = "<group>"; };
 		9351397A1E8BFCF8001FCEE5 /* TargetBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetBehavior.swift; sourceTree = "<group>"; };
@@ -149,6 +155,9 @@
 				93660B431E895A8500F4342B /* StudentViewController.swift */,
 				935139781E8AFA9D001FCEE5 /* StudentDetailViewController.swift */,
 				93660B451E895A8500F4342B /* Main.storyboard */,
+				93013BB01EC3608B0051B8D2 /* MyCollectionViewCell.swift */,
+				93013BAE1EC35FD10051B8D2 /* TargetBehaviorsViewController.swift */,
+				93013BB21EC3A30D0051B8D2 /* ReplacementBehaviorViewController.swift */,
 				931888101E9C7B1D00656099 /* AuthenticationViewController.swift */,
 				93AD9D441EA5C3360044A328 /* BehaviorButton.swift */,
 				93660B831E895BF600F4342B /* Initial Table View */,
@@ -355,10 +364,13 @@
 				931888111E9C7B1D00656099 /* AuthenticationViewController.swift in Sources */,
 				9351397D1E8BFE3C001FCEE5 /* ReplacementBehavior.swift in Sources */,
 				93660B421E895A8500F4342B /* AppDelegate.swift in Sources */,
+				93013BAF1EC35FD10051B8D2 /* TargetBehaviorsViewController.swift in Sources */,
 				93AD9D451EA5C3360044A328 /* BehaviorButton.swift in Sources */,
 				935139791E8AFA9D001FCEE5 /* StudentDetailViewController.swift in Sources */,
 				9351397B1E8BFCF8001FCEE5 /* TargetBehavior.swift in Sources */,
+				93013BB11EC3608B0051B8D2 /* MyCollectionViewCell.swift in Sources */,
 				718189A41EA96EF50098DE9C /* ApiClient.swift in Sources */,
+				93013BB31EC3A30D0051B8D2 /* ReplacementBehaviorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

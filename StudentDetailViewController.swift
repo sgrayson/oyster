@@ -21,6 +21,7 @@ class StudentDetailViewController: UIViewController {
     
     
     //MARK: Properties 
+   
     
     @IBOutlet weak var studentDetailImageView: UIImageView!
     
@@ -54,7 +55,11 @@ class StudentDetailViewController: UIViewController {
     
     
     func buttonSetUp() {
-        studentDetailReplacementBehaviorButton.setTitle("\(replacementCounter)", for: .normal)
+        
+        //this set up should include the name of the bahvior as well. somthing like studentDetailReplacementBehaviorButton.setTitle(" \(replacementBehaviorName): \(replacementCounter)", for: .normal)
+        
+        
+        studentDetailReplacementBehaviorButton.setTitle(" \(replacementCounter)", for: .normal)
         
         studentDetailTargetBehaviorButton.setTitle("\(targetCounter)", for: .normal)
         
@@ -64,7 +69,10 @@ class StudentDetailViewController: UIViewController {
     }
     
     
+    
+    
     @IBAction func replacementCounterButtonAction(_ sender: Any) {
+        
         replacementCounter += 1
         buttonSetUp()
     }
