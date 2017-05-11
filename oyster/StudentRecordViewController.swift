@@ -1,20 +1,36 @@
 //
-//  TargetBehaviorsViewController.swift
+//  StudentRecordViewController.swift
 //  oyster
 //
-//  Created by Jasen Henderson on 5/11/17.
+//  Created by Jasen Henderson on 5/10/17.
 //  Copyright © 2017 Otter. All rights reserved.
 //
 
-var targetBehaviorArray : [String] = ["Swearing", "Arguing", "Work Refusal", "Out Of Seat", "Talking to Self", "Work Avoidance", "Bullying", "Talking Out Of Turn", "Off Task", "Sleeping", "Noises", "Tapping", "Clapping", "Clicking Pen", "Self Stem", "Biting", "Running", "Throwing", "Touching Others", "Personal Space", "Non-Compliance", "Cheating", "Lying", "Picking", "Manipulations", "Refusal", "Blurting", "Hair Pulling", "Farting", "Burping"]
 
 
-var items = ["Blurt", "Running", "crying"]
+var studentReplacementBehaviorsArray: [String] = ["Swearing", "Arguing"]
+
+var replacementBehaviorArray : [String] = ["Raise Hand", "Request Break", "Something", "Otter Something"]
+
+var behaviorCount : [Int] = []
 
 import UIKit
 
-class TargetBehaviorsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class StudentRecordViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
+    
+    override func viewDidLoad() {
+        if behaviorCount.count != studentReplacementBehaviorsArray.count{
+            
+            let difference = studentReplacementBehaviorsArray.count - behaviorCount.count
+            
+        for _ in 0..<difference{
+        behaviorCount.append(0)
+        }
+        } else {
+            print("equal")
+        }
+    }
     
     var newBehaviorForPlan : [String] = []
     
@@ -30,7 +46,7 @@ class TargetBehaviorsViewController: UIViewController, UICollectionViewDataSourc
     
     // tell the collection view how many cells to make
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return targetBehaviorArray.count
+        return studentReplacementBehaviorsArray.count
     }
     
     // make a cell for each cell index path
@@ -42,7 +58,7 @@ class TargetBehaviorsViewController: UIViewController, UICollectionViewDataSourc
         // Use the outlet in our custom class to get a reference to the UILabel in the cell
         
         
-        cell.myLabel.text = targetBehaviorArray[indexPath.item]
+        cell.myLabel.text = "\(studentReplacementBehaviorsArray[indexPath.item]): \(behaviorCount[indexPath.item])"
         //cell.backgroundColor = UIColor.green // make cell more visible in our example project
         //cell.
         
@@ -54,9 +70,10 @@ class TargetBehaviorsViewController: UIViewController, UICollectionViewDataSourc
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         // handle tap events
         
-        newBehaviorForPlan.append("\(targetBehaviorArray[indexPath.item])")
-        print(newBehaviorForPlan)
-        newBehaviorLabel.text = "You added \(newBehaviorForPlan.last!) as a rep behavior to Timmy's Plan"
+        behaviorCount[indexPath.item] += 1
+        
+        
+        
         
     }
 }
