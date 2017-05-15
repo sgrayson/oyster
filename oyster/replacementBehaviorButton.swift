@@ -12,10 +12,14 @@ import UIKit
 
 
 
-class BehaviorButton: UIButton {
+class replacementBehaviorButton: UIButton {
     
-    @IBInspectable var fillColor: UIColor = targetColor
+    
     @IBInspectable var isTargetButton: Bool = true
+    
+    
+    @IBInspectable var fillColor: UIColor = replacementColor
+    
     
     
     override func draw(_ rect: CGRect) {
@@ -37,13 +41,13 @@ class BehaviorButton: UIButton {
     }
     
     
-
+    
     /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
-
+     // Only override draw() if you perform custom drawing.
+     // An empty implementation adversely affects performance during animation.
+     override func draw(_ rect: CGRect) {
+     // Drawing code
+     }
+     */
+    
 }

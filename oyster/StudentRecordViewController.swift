@@ -6,33 +6,42 @@
 //  Copyright © 2017 Otter. All rights reserved.
 //
 
-
-
-var studentReplacementBehaviorsArray: [String] = ["Swearing", "Arguing"]
-
-var replacementBehaviorArray : [String] = ["Raise Hand", "Request Break", "Something", "Otter Something"]
-
-var behaviorCount : [Int] = []
-
 import UIKit
 
 class StudentRecordViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     
+    var image : UIImage = #imageLiteral(resourceName: "studentPic1")
+    
+    @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue) {}
+    
+    @IBOutlet weak var studentProfileImage: UIImageView!
+    
     override func viewDidLoad() {
-        if behaviorCount.count != studentReplacementBehaviorsArray.count{
+        studentProfileImage.image = image
+        
+        studentProfileImage.layer.cornerRadius = studentProfileImage.frame.height/2
+        studentTargetBehaviorsArray = studentBehaviorsToTrack
+        
+        if targetBehaviorArray.count != studentTargetBehaviorsArray.count{
             
-            let difference = studentReplacementBehaviorsArray.count - behaviorCount.count
+            let difference = studentTargetBehaviorsArray.count - targetBehaviorCount.count
             
-        for _ in 0..<difference{
-        behaviorCount.append(0)
-        }
+            for _ in 0..<difference{
+                targetBehaviorCount.append(0)
+            }
         } else {
             print("equal")
         }
+        
+        
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        
     }
     
-    var newBehaviorForPlan : [String] = []
+    
     
     @IBOutlet weak var newBehaviorLabel: UILabel!
     
@@ -46,7 +55,7 @@ class StudentRecordViewController: UIViewController, UICollectionViewDataSource,
     
     // tell the collection view how many cells to make
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return studentReplacementBehaviorsArray.count
+        return studentTargetBehaviorsArray.count
     }
     
     // make a cell for each cell index path
@@ -58,7 +67,9 @@ class StudentRecordViewController: UIViewController, UICollectionViewDataSource,
         // Use the outlet in our custom class to get a reference to the UILabel in the cell
         
         
-        cell.myLabel.text = "\(studentReplacementBehaviorsArray[indexPath.item]): \(behaviorCount[indexPath.item])"
+        cell.myLabel.text = "\(studentTargetBehaviorsArray[indexPath.item]): \(targetBehaviorCount[indexPath.item])"
+        cell.layer.cornerRadius = 10
+        cell.backgroundColor = targetColor
         //cell.backgroundColor = UIColor.green // make cell more visible in our example project
         //cell.
         
@@ -70,7 +81,9 @@ class StudentRecordViewController: UIViewController, UICollectionViewDataSource,
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         // handle tap events
         
-        behaviorCount[indexPath.item] += 1
+        feedbackTap()
+        
+        targetBehaviorCount[indexPath.item] += 1
         
         
         

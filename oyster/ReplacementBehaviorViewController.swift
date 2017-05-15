@@ -11,7 +11,7 @@ import UIKit
 class ReplacementBehaviorViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     
-    var newBehaviorForPlan : [String] = []
+    
     
     @IBOutlet weak var newBehaviorLabel: UILabel!
     
@@ -36,24 +36,42 @@ class ReplacementBehaviorViewController: UIViewController, UICollectionViewDataS
         
         // Use the outlet in our custom class to get a reference to the UILabel in the cell
         
-        
         cell.myLabel.text = replacementBehaviorArray[indexPath.item]
-        //cell.backgroundColor = UIColor.green // make cell more visible in our example project
+        cell.layer.cornerRadius = 10
+        cell.backgroundColor = unselectedButtonColor
+        
+        // make cell more visible in our example project
         //cell.
         
         return cell
     }
+    
+    
     
     // MARK: - UICollectionViewDelegate protocol
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         // handle tap events
         
-        newBehaviorForPlan.append("\(replacementBehaviorArray[indexPath.item])")
-        studentReplacementBehaviorsArray.append("\(replacementBehaviorArray[indexPath.item])")
-        print(newBehaviorForPlan)
-        newBehaviorLabel.text = "You added \(newBehaviorForPlan.last!) as a rep behavior to Timmy's Plan"
+        feedbackTap()
+        
+        
+        
+        
         
         
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath)
+        cell?.backgroundColor = pressingColor
+    }
+    
+    // change background color back when user releases touch
+    func collectionView(_ collectionView: UICollectionView, didUnhighlightItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath)
+        cell?.backgroundColor = replacementColor
+    }
+    
+    
 }

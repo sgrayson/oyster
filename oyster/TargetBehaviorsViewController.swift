@@ -6,17 +6,13 @@
 //  Copyright © 2017 Otter. All rights reserved.
 //
 
-var targetBehaviorArray : [String] = ["Swearing", "Arguing", "Work Refusal", "Out Of Seat", "Talking to Self", "Work Avoidance", "Bullying", "Talking Out Of Turn", "Off Task", "Sleeping", "Noises", "Tapping", "Clapping", "Clicking Pen", "Self Stem", "Biting", "Running", "Throwing", "Touching Others", "Personal Space", "Non-Compliance", "Cheating", "Lying", "Picking", "Manipulations", "Refusal", "Blurting", "Hair Pulling", "Farting", "Burping"]
-
-
-var items = ["Blurt", "Running", "crying"]
-
 import UIKit
 
 class TargetBehaviorsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     
-    var newBehaviorForPlan : [String] = []
+    
+    
     
     @IBOutlet weak var newBehaviorLabel: UILabel!
     
@@ -24,7 +20,14 @@ class TargetBehaviorsViewController: UIViewController, UICollectionViewDataSourc
     
     let reuseIdentifier = "cell" // also enter this string as the cell identifier in the storyboard
     
-    
+    func collectionView(_ collectionView: UICollectionView,viewForSupplementaryElementOfKind kind: String,
+            at indexPath: IndexPath) -> UICollectionReusableView {
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
+        withReuseIdentifier: "behaviorHeader",
+                    for: indexPath) as! CollectionReusableView
+        headerView.behaviorsTitleLabel.text = "Target Behaviors"
+        return headerView
+    }
     
     // MARK: - UICollectionViewDataSource protocol
     
@@ -39,11 +42,25 @@ class TargetBehaviorsViewController: UIViewController, UICollectionViewDataSourc
         // get a reference to our storyboard cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as! MyCollectionViewCell
         
+        
         // Use the outlet in our custom class to get a reference to the UILabel in the cell
         
-        
         cell.myLabel.text = targetBehaviorArray[indexPath.item]
-        //cell.backgroundColor = UIColor.green // make cell more visible in our example project
+        cell.layer.cornerRadius = 10
+        cell.backgroundColor = unselectedButtonColor
+        
+        if newBehaviorForPlan.contains(targetBehaviorArray[indexPath.item]) {
+        
+            cell.backgroundColor = targetColor
+            
+        } else {
+            cell.backgroundColor = unselectedButtonColor
+        }
+        
+        
+        
+        
+        // make cell more visible in our example project
         //cell.
         
         return cell
@@ -51,12 +68,44 @@ class TargetBehaviorsViewController: UIViewController, UICollectionViewDataSourc
     
     // MARK: - UICollectionViewDelegate protocol
     
+    
+    
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath)
         // handle tap events
+        feedbackTap()
         
-        newBehaviorForPlan.append("\(targetBehaviorArray[indexPath.item])")
+        
+        
+        
+        
+        if newBehaviorForPlan.contains(targetBehaviorArray[indexPath.item]) {
+          newBehaviorForPlan = newBehaviorForPlan.filter { $0 != "\(targetBehaviorArray[indexPath.item])"}
+            cell?.isSelected = false
+            
+        } else {
+            newBehaviorForPlan.append(targetBehaviorArray[indexPath.item])
+            cell?.isSelected = true
+        }
+        
+        
+    
         print(newBehaviorForPlan)
-        newBehaviorLabel.text = "You added \(newBehaviorForPlan.last!) as a rep behavior to Timmy's Plan"
         
     }
+    func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath)
+        cell?.backgroundColor = pressingColor
+    }
+    
+    // change background color back when user releases touch
+     func collectionView(_ collectionView: UICollectionView, didUnhighlightItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath)
+       
+        if cell?.isSelected == false {
+            
+        }
+ 
+}
 }

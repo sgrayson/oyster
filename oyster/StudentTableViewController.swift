@@ -17,6 +17,8 @@ var students = [Student]()
 
 class StudentTableViewController: UITableViewController {
     
+    
+    
     var targetBehaviors = [TargetBehavior]()
     
     var targetCount = 0
@@ -30,6 +32,11 @@ class StudentTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.navigationBar.barTintColor = otterThemeColor
+        
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = false
         loadStudents()
         
         // Uncomment the following line to preserve selection between presentations
@@ -57,6 +64,9 @@ class StudentTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        
+        
+        
         /*
  
  
@@ -81,7 +91,10 @@ class StudentTableViewController: UITableViewController {
         let student = students[indexPath.row]
         
         cell.studentReplacementBehaviorButton.tag = indexPath.row
+       // cell.studentReplacementBehaviorButton.layer.cornerRadius = 10
         cell.studentTargetBehaviorButton.tag = indexPath.row
+        //cell.studentTargetBehaviorButton.layer.cornerRadius = 10
+        //cell.studentImageView.layer.cornerRadius = cell.studentImageView.frame.height/2
         
         
         
@@ -154,15 +167,35 @@ class StudentTableViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     
-    
+    var selectedImage : UIImage = #imageLiteral(resourceName: "studentPic1")
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+        if segue.identifier == "ToStudentDetailPage" {
+            if let indexPath = self.tableView.indexPathForSelectedRow{
+                
+                let controller = segue.destination as! StudentRecordViewController
+                
+                controller.image = selectedImage
+                
+                
+            }
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)
+        
+        // SEAN I want to pass the selected students photo onto the detail page through this function and the prepare for segue function above. Could you help me finish the following code.
+        
+        // selectedImage = (studnet image connected to the indexpath row selected) im not sure how to connect to each students image
         
         
         
     }
+        
+    
     
     
     

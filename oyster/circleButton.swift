@@ -1,4 +1,15 @@
 //
+//  circleButton.swift
+//  oyster
+//
+//  Created by Jasen Henderson on 5/15/17.
+//  Copyright © 2017 Otter. All rights reserved.
+//
+
+import Foundation
+
+
+//
 //  BehaviorButton.swift
 //  oyster
 //
@@ -12,14 +23,14 @@ import UIKit
 
 
 
-class BehaviorButton: UIButton {
+class circleButton: UIButton {
     
     @IBInspectable var fillColor: UIColor = targetColor
     @IBInspectable var isTargetButton: Bool = true
     
     
     override func draw(_ rect: CGRect) {
-        let path = UIBezierPath(roundedRect: rect, cornerRadius: 10)
+        let path = UIBezierPath(roundedRect: rect, cornerRadius: frame.height/2)
         fillColor.setFill()
         path.fill()
         
@@ -37,13 +48,13 @@ class BehaviorButton: UIButton {
     }
     
     
-
+    
     /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
-
+     // Only override draw() if you perform custom drawing.
+     // An empty implementation adversely affects performance during animation.
+     override func draw(_ rect: CGRect) {
+     // Drawing code
+     }
+     */
+    
 }
