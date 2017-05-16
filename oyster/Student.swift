@@ -8,7 +8,7 @@
 
 import UIKit
 
-// this is a class to allow the creation and display of studnets information
+// this is a class to allow the creation and display of students information
 
 class Student {
     

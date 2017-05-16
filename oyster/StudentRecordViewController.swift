@@ -10,14 +10,32 @@ import UIKit
 
 class StudentRecordViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
+    //target counter should save somehow to database 
+    var targetCounter = 0
+    
+    var replacementCounter = 0
     
     var image : UIImage = #imageLiteral(resourceName: "studentPic1")
     
+    @IBOutlet weak var studentTargetBehaviorButton: BehaviorButton!
+    @IBOutlet weak var studentReplacementBehaviorButton: replacementBehaviorButton!
     @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue) {}
     
     @IBOutlet weak var studentProfileImage: UIImageView!
     
     override func viewDidLoad() {
+        
+        
+        //target counter should save somehow to database
+        //Name should pull from the specific students target
+        studentTargetBehaviorButton.setTitle("Target: \(targetCounter)", for: .normal)
+        
+        //rep counter should save somehow to database
+        //Name should pull from the specific students rep
+        
+        studentReplacementBehaviorButton.setTitle("Replacment: \(replacementCounter)", for: .normal)
+        
+        
         studentProfileImage.image = image
         
         studentProfileImage.layer.cornerRadius = studentProfileImage.frame.height/2
@@ -77,6 +95,7 @@ class StudentRecordViewController: UIViewController, UICollectionViewDataSource,
     }
     
     // MARK: - UICollectionViewDelegate protocol
+    /*
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         // handle tap events
@@ -85,8 +104,33 @@ class StudentRecordViewController: UIViewController, UICollectionViewDataSource,
         
         targetBehaviorCount[indexPath.item] += 1
         
+      */
+   
+    @IBAction func targetCounterButton(_ sender: Any) {
         
-        
+        targetCounter += 1
+        studentTargetBehaviorButton.setTitle("Target: \(targetCounter)", for: .normal)
         
     }
+
+
+    
+    @IBAction func replacementCounterButtonAction(_ sender: Any) {
+        replacementCounter += 1
+        studentReplacementBehaviorButton.setTitle("Replacement: \(replacementCounter)", for: .normal)
+        
+    }
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
