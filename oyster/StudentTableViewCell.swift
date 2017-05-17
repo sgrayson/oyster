@@ -14,6 +14,10 @@ import UIKit
 
 class StudentTableViewCell: UITableViewCell {
 
+    var tapAction: ((UITableViewCell) -> Void)?
+    
+    
+    
     
     
     
@@ -27,7 +31,27 @@ class StudentTableViewCell: UITableViewCell {
    
     
     
+    @IBAction func replacementBehaviorButtonAction(_ sender: Any) {
+        
+        let buttonRow = studentReplacementBehaviorButton.tag
+        
+        var replacementCount = 0
+        replacementCount += 1
+        
+        studentReplacementBehaviorButton.setTitle("\(buttonRow): \(replacementCount)", for: .normal)
+        
+    }
+    
 
+    @IBAction func targetBehaviorButtonAction(_ sender: Any) {
+        
+        let buttonRow = studentTargetBehaviorButton.tag
+        
+        var targetCount = 0
+        targetCount += 1
+        
+        studentTargetBehaviorButton.setTitle("\(buttonRow): \(targetCount)", for: .normal)
+    }
     
     
     override func awakeFromNib() {

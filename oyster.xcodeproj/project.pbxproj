@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		718189A41EA96EF50098DE9C /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718189A31EA96EF50098DE9C /* ApiClient.swift */; };
+		93013BB11EC3608B0051B8D2 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93013BB01EC3608B0051B8D2 /* MyCollectionViewCell.swift */; };
+		93013BB31EC3A30D0051B8D2 /* ReplacementBehaviorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93013BB21EC3A30D0051B8D2 /* ReplacementBehaviorViewController.swift */; };
 		931888111E9C7B1D00656099 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931888101E9C7B1D00656099 /* AuthenticationViewController.swift */; };
-		935139791E8AFA9D001FCEE5 /* StudentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935139781E8AFA9D001FCEE5 /* StudentDetailViewController.swift */; };
 		9351397B1E8BFCF8001FCEE5 /* TargetBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9351397A1E8BFCF8001FCEE5 /* TargetBehavior.swift */; };
 		9351397D1E8BFE3C001FCEE5 /* ReplacementBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9351397C1E8BFE3C001FCEE5 /* ReplacementBehavior.swift */; };
+		93624E581EC8E9560062627F /* FooterButtonCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93624E571EC8E9560062627F /* FooterButtonCollectionReusableView.swift */; };
+		93624E5A1EC8EB8D0062627F /* BehaviorDefinitionPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93624E591EC8EB8C0062627F /* BehaviorDefinitionPageViewController.swift */; };
+		93624E5D1EC905E80062627F /* ReplacementBehaviorsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93624E5C1EC905E80062627F /* ReplacementBehaviorsPageViewController.swift */; };
+		93624E5F1EC95E330062627F /* addANewBehaviorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93624E5E1EC95E330062627F /* addANewBehaviorViewController.swift */; };
 		93660B421E895A8500F4342B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93660B411E895A8500F4342B /* AppDelegate.swift */; };
 		93660B441E895A8500F4342B /* StudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93660B431E895A8500F4342B /* StudentViewController.swift */; };
 		93660B471E895A8500F4342B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93660B451E895A8500F4342B /* Main.storyboard */; };
@@ -27,6 +33,20 @@
 		93660B7D1E895B3600F4342B /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93660B7C1E895B3600F4342B /* Student.swift */; };
 		93660B801E895BA100F4342B /* StudentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93660B7F1E895BA100F4342B /* StudentTableViewController.swift */; };
 		93660B821E895BCD00F4342B /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93660B811E895BCD00F4342B /* StudentTableViewCell.swift */; };
+		9367C9451EC4B18400B36B0D /* TargetBehaviorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9367C9441EC4B18400B36B0D /* TargetBehaviorsViewController.swift */; };
+		9367C9471EC4B58100B36B0D /* StudentTargetCounterCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9367C9461EC4B58100B36B0D /* StudentTargetCounterCollectionViewController.swift */; };
+		9367C96A1EC5580B00B36B0D /* UiColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9367C9691EC5580B00B36B0D /* UiColors.swift */; };
+		9367C96C1EC5622F00B36B0D /* taps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9367C96B1EC5622F00B36B0D /* taps.swift */; };
+		9367C96E1EC5629D00B36B0D /* behaviors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9367C96D1EC5629D00B36B0D /* behaviors.swift */; };
+		9367C9731EC602E700B36B0D /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9367C9721EC602E700B36B0D /* CollectionReusableView.swift */; };
+		9367C9981EC647C900B36B0D /* SearchableBehaviorsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9367C9971EC647C900B36B0D /* SearchableBehaviorsCollectionViewController.swift */; };
+		93AD9D451EA5C3360044A328 /* BehaviorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD9D441EA5C3360044A328 /* BehaviorButton.swift */; };
+		93C5CC5B1EC9F48B005A52F2 /* addNewReplacementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C5CC5A1EC9F48B005A52F2 /* addNewReplacementViewController.swift */; };
+		93C5CC5D1ECA2D3E005A52F2 /* replacementBehaviorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C5CC5C1ECA2D3E005A52F2 /* replacementBehaviorButton.swift */; };
+		93C5CC5F1ECA485D005A52F2 /* circleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C5CC5E1ECA485D005A52F2 /* circleButton.swift */; };
+		93C5CC611ECA4B71005A52F2 /* notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C5CC601ECA4B71005A52F2 /* notes.swift */; };
+		93DCEA0F1EC3D476006F9EFD /* StudentRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DCEA0E1EC3D476006F9EFD /* StudentRecordViewController.swift */; };
+		93DCEA111EC3D7C9006F9EFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DCEA101EC3D7C9006F9EFD /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,10 +92,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		718189A31EA96EF50098DE9C /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		93013BB01EC3608B0051B8D2 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		93013BB21EC3A30D0051B8D2 /* ReplacementBehaviorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplacementBehaviorViewController.swift; sourceTree = "<group>"; };
 		931888101E9C7B1D00656099 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
-		935139781E8AFA9D001FCEE5 /* StudentDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudentDetailViewController.swift; path = ../StudentDetailViewController.swift; sourceTree = "<group>"; };
 		9351397A1E8BFCF8001FCEE5 /* TargetBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetBehavior.swift; sourceTree = "<group>"; };
 		9351397C1E8BFE3C001FCEE5 /* ReplacementBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplacementBehavior.swift; sourceTree = "<group>"; };
+		93624E571EC8E9560062627F /* FooterButtonCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterButtonCollectionReusableView.swift; sourceTree = "<group>"; };
+		93624E591EC8EB8C0062627F /* BehaviorDefinitionPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehaviorDefinitionPageViewController.swift; sourceTree = "<group>"; };
+		93624E5C1EC905E80062627F /* ReplacementBehaviorsPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplacementBehaviorsPageViewController.swift; sourceTree = "<group>"; };
+		93624E5E1EC95E330062627F /* addANewBehaviorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addANewBehaviorViewController.swift; sourceTree = "<group>"; };
 		93660B3E1E895A8500F4342B /* oyster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oyster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93660B411E895A8500F4342B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93660B431E895A8500F4342B /* StudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +123,20 @@
 		93660B7C1E895B3600F4342B /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		93660B7F1E895BA100F4342B /* StudentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTableViewController.swift; sourceTree = "<group>"; };
 		93660B811E895BCD00F4342B /* StudentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
+		9367C9441EC4B18400B36B0D /* TargetBehaviorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetBehaviorsViewController.swift; sourceTree = "<group>"; };
+		9367C9461EC4B58100B36B0D /* StudentTargetCounterCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTargetCounterCollectionViewController.swift; sourceTree = "<group>"; };
+		9367C9691EC5580B00B36B0D /* UiColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UiColors.swift; sourceTree = "<group>"; };
+		9367C96B1EC5622F00B36B0D /* taps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = taps.swift; sourceTree = "<group>"; };
+		9367C96D1EC5629D00B36B0D /* behaviors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = behaviors.swift; sourceTree = "<group>"; };
+		9367C9721EC602E700B36B0D /* CollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
+		9367C9971EC647C900B36B0D /* SearchableBehaviorsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchableBehaviorsCollectionViewController.swift; sourceTree = "<group>"; };
+		93AD9D441EA5C3360044A328 /* BehaviorButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehaviorButton.swift; sourceTree = "<group>"; };
+		93C5CC5A1EC9F48B005A52F2 /* addNewReplacementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addNewReplacementViewController.swift; sourceTree = "<group>"; };
+		93C5CC5C1ECA2D3E005A52F2 /* replacementBehaviorButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = replacementBehaviorButton.swift; sourceTree = "<group>"; };
+		93C5CC5E1ECA485D005A52F2 /* circleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = circleButton.swift; sourceTree = "<group>"; };
+		93C5CC601ECA4B71005A52F2 /* notes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = notes.swift; sourceTree = "<group>"; };
+		93DCEA0E1EC3D476006F9EFD /* StudentRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentRecordViewController.swift; sourceTree = "<group>"; };
+		93DCEA101EC3D7C9006F9EFD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +157,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93624E5B1EC8FB1F0062627F /* Behavior Definition Page */ = {
+			isa = PBXGroup;
+			children = (
+				93624E591EC8EB8C0062627F /* BehaviorDefinitionPageViewController.swift */,
+			);
+			name = "Behavior Definition Page";
+			sourceTree = "<group>";
+		};
 		93660B351E895A8500F4342B = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +172,7 @@
 				93660B541E895A8500F4342B /* oyster WatchKit App */,
 				93660B631E895A8500F4342B /* oyster WatchKit Extension */,
 				93660B3F1E895A8500F4342B /* Products */,
+				93660B7E1E895B6600F4342B /* obejcts */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,16 +189,32 @@
 		93660B401E895A8500F4342B /* oyster */ = {
 			isa = PBXGroup;
 			children = (
-				93660B7E1E895B6600F4342B /* obejcts */,
-				93660B411E895A8500F4342B /* AppDelegate.swift */,
-				93660B431E895A8500F4342B /* StudentViewController.swift */,
-				935139781E8AFA9D001FCEE5 /* StudentDetailViewController.swift */,
-				93660B451E895A8500F4342B /* Main.storyboard */,
-				931888101E9C7B1D00656099 /* AuthenticationViewController.swift */,
+				93C5CC601ECA4B71005A52F2 /* notes.swift */,
+				9367C9691EC5580B00B36B0D /* UiColors.swift */,
+				9367C96B1EC5622F00B36B0D /* taps.swift */,
+				9367C96D1EC5629D00B36B0D /* behaviors.swift */,
+				93C5CC5E1ECA485D005A52F2 /* circleButton.swift */,
+				93AD9D441EA5C3360044A328 /* BehaviorButton.swift */,
+				93C5CC5C1ECA2D3E005A52F2 /* replacementBehaviorButton.swift */,
+				9367C9701EC5651D00B36B0D /* Authentication Page */,
 				93660B831E895BF600F4342B /* Initial Table View */,
+				9367C96F1EC564ED00B36B0D /* Behavior Pages */,
+				9367C9711EC5659E00B36B0D /* Student Detail Page */,
+				93660B451E895A8500F4342B /* Main.storyboard */,
+				93624E5E1EC95E330062627F /* addANewBehaviorViewController.swift */,
+				93C5CC5A1EC9F48B005A52F2 /* addNewReplacementViewController.swift */,
+				93624E5B1EC8FB1F0062627F /* Behavior Definition Page */,
+				93624E571EC8E9560062627F /* FooterButtonCollectionReusableView.swift */,
+				9367C9991EC647CD00B36B0D /* SearchableBehaviorPage */,
+				9367C9721EC602E700B36B0D /* CollectionReusableView.swift */,
+				9367C9461EC4B58100B36B0D /* StudentTargetCounterCollectionViewController.swift */,
+				93DCEA0E1EC3D476006F9EFD /* StudentRecordViewController.swift */,
 				93660B481E895A8500F4342B /* Assets.xcassets */,
+				93660B411E895A8500F4342B /* AppDelegate.swift */,
+				93DCEA101EC3D7C9006F9EFD /* ViewController.swift */,
 				93660B4A1E895A8500F4342B /* LaunchScreen.storyboard */,
 				93660B4D1E895A8500F4342B /* Info.plist */,
+				718189A31EA96EF50098DE9C /* ApiClient.swift */,
 			);
 			path = oyster;
 			sourceTree = "<group>";
@@ -193,6 +258,7 @@
 				9351397C1E8BFE3C001FCEE5 /* ReplacementBehavior.swift */,
 			);
 			name = obejcts;
+			path = oyster;
 			sourceTree = "<group>";
 		};
 		93660B831E895BF600F4342B /* Initial Table View */ = {
@@ -202,6 +268,41 @@
 				93660B7F1E895BA100F4342B /* StudentTableViewController.swift */,
 			);
 			name = "Initial Table View";
+			sourceTree = "<group>";
+		};
+		9367C96F1EC564ED00B36B0D /* Behavior Pages */ = {
+			isa = PBXGroup;
+			children = (
+				93013BB01EC3608B0051B8D2 /* MyCollectionViewCell.swift */,
+				93013BB21EC3A30D0051B8D2 /* ReplacementBehaviorViewController.swift */,
+				9367C9441EC4B18400B36B0D /* TargetBehaviorsViewController.swift */,
+			);
+			name = "Behavior Pages";
+			sourceTree = "<group>";
+		};
+		9367C9701EC5651D00B36B0D /* Authentication Page */ = {
+			isa = PBXGroup;
+			children = (
+				931888101E9C7B1D00656099 /* AuthenticationViewController.swift */,
+			);
+			name = "Authentication Page";
+			sourceTree = "<group>";
+		};
+		9367C9711EC5659E00B36B0D /* Student Detail Page */ = {
+			isa = PBXGroup;
+			children = (
+				93660B431E895A8500F4342B /* StudentViewController.swift */,
+			);
+			name = "Student Detail Page";
+			sourceTree = "<group>";
+		};
+		9367C9991EC647CD00B36B0D /* SearchableBehaviorPage */ = {
+			isa = PBXGroup;
+			children = (
+				9367C9971EC647C900B36B0D /* SearchableBehaviorsCollectionViewController.swift */,
+				93624E5C1EC905E80062627F /* ReplacementBehaviorsPageViewController.swift */,
+			);
+			name = SearchableBehaviorPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,15 +443,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93DCEA111EC3D7C9006F9EFD /* ViewController.swift in Sources */,
 				93660B441E895A8500F4342B /* StudentViewController.swift in Sources */,
+				93C5CC5B1EC9F48B005A52F2 /* addNewReplacementViewController.swift in Sources */,
+				93DCEA0F1EC3D476006F9EFD /* StudentRecordViewController.swift in Sources */,
+				9367C9981EC647C900B36B0D /* SearchableBehaviorsCollectionViewController.swift in Sources */,
+				93624E581EC8E9560062627F /* FooterButtonCollectionReusableView.swift in Sources */,
 				93660B821E895BCD00F4342B /* StudentTableViewCell.swift in Sources */,
+				9367C9451EC4B18400B36B0D /* TargetBehaviorsViewController.swift in Sources */,
+				9367C96E1EC5629D00B36B0D /* behaviors.swift in Sources */,
 				93660B7D1E895B3600F4342B /* Student.swift in Sources */,
+				9367C9471EC4B58100B36B0D /* StudentTargetCounterCollectionViewController.swift in Sources */,
+				9367C96C1EC5622F00B36B0D /* taps.swift in Sources */,
+				93C5CC611ECA4B71005A52F2 /* notes.swift in Sources */,
+				93624E5F1EC95E330062627F /* addANewBehaviorViewController.swift in Sources */,
 				93660B801E895BA100F4342B /* StudentTableViewController.swift in Sources */,
 				931888111E9C7B1D00656099 /* AuthenticationViewController.swift in Sources */,
 				9351397D1E8BFE3C001FCEE5 /* ReplacementBehavior.swift in Sources */,
 				93660B421E895A8500F4342B /* AppDelegate.swift in Sources */,
-				935139791E8AFA9D001FCEE5 /* StudentDetailViewController.swift in Sources */,
+				9367C9731EC602E700B36B0D /* CollectionReusableView.swift in Sources */,
+				93AD9D451EA5C3360044A328 /* BehaviorButton.swift in Sources */,
 				9351397B1E8BFCF8001FCEE5 /* TargetBehavior.swift in Sources */,
+				93013BB11EC3608B0051B8D2 /* MyCollectionViewCell.swift in Sources */,
+				718189A41EA96EF50098DE9C /* ApiClient.swift in Sources */,
+				93013BB31EC3A30D0051B8D2 /* ReplacementBehaviorViewController.swift in Sources */,
+				93C5CC5F1ECA485D005A52F2 /* circleButton.swift in Sources */,
+				93C5CC5D1ECA2D3E005A52F2 /* replacementBehaviorButton.swift in Sources */,
+				9367C96A1EC5580B00B36B0D /* UiColors.swift in Sources */,
+				93624E5D1EC905E80062627F /* ReplacementBehaviorsPageViewController.swift in Sources */,
+				93624E5A1EC8EB8D0062627F /* BehaviorDefinitionPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

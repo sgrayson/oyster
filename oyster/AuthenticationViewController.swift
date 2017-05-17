@@ -47,7 +47,7 @@ class AthenticationViewController: UIViewController {
     
     
     
-    let kMsgShowFinger = "Push us"
+    let kMsgShowFinger = ""
     let kMsgShowReason = "Try to dismiss this screen"
     let kMsgFingerOK = "Login successful"
     
